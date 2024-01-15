@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulator Luas & Keliling Persegi</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Kalkulator Luas & Keliling Persegi</h1>
+        <h2>Welcome To</h2>
+        <h4>Kalkulator Luas & Keliling Persegi</h4>
+        <p>This website is used to calculate the area and perimeter of a square for a mini project for RevoU.</p>
+    </header>
+    <main>
+        <h1>Luas Persegi</h1>
+        <section class="rumus">
+            <img src="asset/persegi.webp" alt="persegi">
+            <h3>Rumus Luas Persegi yaitu:</h3>
+            <h4>L = SxS</h4>
+            <p>Dimana :</p>
+            <p>L = Luas</p>
+            <p>S = Sisi</p>
+            <hr>
+        </section>
+        <section class="input-section">
+            <label for="squareSideL" id="lblSquareSide">
+                <h2>Hitung Luas Persegi</h2>
+            </label>
+            <input type="number" id="squareSideL" placeholder="Masukkan panjang sisi persegi">
+            <div class="hasil" id="hasilContainer">
+            <h5 >L = S x S</h5>
+            <h5>L = <span id="nilaiSisi1"></span> x <span id="nilaiSisi2"></span></h5>
+            <h5>L = <span id="hasil"></span></h5>
+            </div>
+        </section>
+        <section class="button">
+            <button id="countluas">Hitung</button>
+            <button class="reset" id="resetluas">Reset</button>
+        </section>
+        <h1>Keliling Persegi</h1>
+        <section class="rumusk">
+            <img src="asset/persegi.webp" alt="persegi">
+            <h3>Rumus Keliling Persegi yaitu:</h3>
+            <h4>K = 4xS</h4>
+            <p>Dimana :</p>
+            <p>K = Keliling</p>
+            <p>S = Sisi</p>
+            <hr>
+        </section>
+        <section class="input-section">
+            <label for="squareSideK" id="lblSquareSide">
+                <h2>Hitung Keliling Persegi</h2>
+            </label>
+            <input type="number" id="squareSideK" placeholder="Masukkan panjang sisi persegi">
+            <div class="hasil" id="hasilContainerK">
+                <h5 >K = 4 x S</h5>
+                <h5>K = 4 x <span id="nilaiSisi"></span></h5>
+                <h5>K = <span id="hasilk"></span></h5>
+                </div>
+        </section>
+        <section class="button">
+            <button id="countkeliling">Hitung</button>
+            <button class="reset" id="resetkeliling">Reset</button>
+        </section>
+    </main>
+    <script src="js/script.js"></script>
+</body>
+</html>
